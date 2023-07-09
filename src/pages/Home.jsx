@@ -18,7 +18,7 @@ const metamaskConfig = metamaskWallet();
 
   // console.log(address)
   
-  return <button onClick={handleconnect}>Connect Wallet</button>
+  return <button onClick={handleconnect}>Connect Walle</button>
 }
 
 export default Home
