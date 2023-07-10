@@ -5,7 +5,7 @@ import PatientCard from '../../components/PatientCard'
 
 const DoctorHome = () => {
   return (
-    <div className='w-full h-[100vh] bg-bg-primary overflow-auto'>
+    <div className='w-full h-[100vh] bg-bg-primary overflow-auto pt-24'>
       <p className='font-serif font-semibold text-lg text-white'>Active Patients</p>
       <div className='w-full pt-4 flex flex-wrap justify-start items-start gap-2 mx-3 overflow-x-hidden'>
 

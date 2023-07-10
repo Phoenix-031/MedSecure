@@ -1,5 +1,7 @@
 export const appSlice = (set) => ({
     walletaddress:'',
+    user:'',
+    setUser: (user) => set((state) => ({ ...state, user })),
     setWalletaddress: (walletaddress) => set((state) => ({ ...state, walletaddress })),
     doctordata:[],
     setDoctordata: (doctordata) => set((state) => ({ ...state, doctordata })),

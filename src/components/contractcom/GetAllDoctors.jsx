@@ -18,18 +18,18 @@ const GetAllDoctors = () => {
     functionName: 'getAllDoctor',
   })
 
-  console.log(datafetched)
+  // console.log(datafetched)
 
   return(
     <div>
       {
         datafetched.isLoading ? <div>Loading...</div> : 
-        <div className="border-2 border-border-primary bg-bg-primary w-full h-[100vh] flex flex-wrap gap-1 pt-20 py-3 items-start px-3 overflow-auto" >
+        <div className=" bg-bg-primary w-full h-[100vh] flex flex-wrap gap-3 pt-24 py-3 items-center px-2 overflow-auto" >
           {
           datafetched.data.map((item, index) => {
             if(item.name !== ''){
             return (
-              <div className="border-2 border-border-primary bg-bg-secondary rounded-lg py-2 px-1 w-1/3 h-[200px] flex justify-center items-center flex-col" key={index}>
+              <div className="border-2 border-border-primary bg-bg-secondary rounded-lg py-2 px-1 w-1/4 h-[200px] flex justify-center items-center flex-col" key={index}>
                 <p className="mt-2 text-white font-serif font-semibold">{item.name}</p>
                 <p className="mt-2 text-white font-serif font-semibold">{item.category}</p>
                 <p className="mt-2 text-white font-serif font-semibold">{item.fees}</p>

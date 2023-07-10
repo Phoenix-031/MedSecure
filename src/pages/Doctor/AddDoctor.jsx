@@ -42,7 +42,7 @@ const AddDoctor = () => {
   
   
   return (
-    <div className='bg-bg-primary w-full h-[100vh] flex justify-center items-center'>
+    <div className='bg-bg-primary w-full h-[100vh] flex justify-center items-center pt-20'>
       <div className='flex justify-center items-center py-2 px-5 rounded-lg border-2 border-border-primary bg-bg-secondary w-2/5 h-[80%] flex-col gap-3'>
         <label className='flex w-full justify-center items-center flex-col text-white font-serif'>
           Doctor Name:

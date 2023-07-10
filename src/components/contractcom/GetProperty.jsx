@@ -8,7 +8,7 @@ import contractAbi from '../../contracts/abi.json'
 const GetProperty = () => {
 
   const datafetched = useContractRead({
-    address: '0x8BC9B1202624a062B20806155b61012C668B7709',
+    address: '0x216a2339787a298555d65b9ecb0c09301a8e8911',
     abi: contractAbi.abi,
     functionName: 'getPreoperty',
     args:['1']
