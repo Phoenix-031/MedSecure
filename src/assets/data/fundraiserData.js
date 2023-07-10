@@ -1,0 +1,47 @@
+export const fundraiserData = [
+    {
+        id: 1,
+        title: "Fundraiser 1",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam",
+        amtraised: 10000,
+        noofdays: 27,
+        supporters: 100,
+        image: "https://kettocdn.gumlet.io/media/campaign/212000/212655/image/wid1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=300&dpr=1.3",
+    },
+    {
+        id: 2,
+        title: "Fundraiser 2",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam",
+        amtraised: 10000,
+        noofdays: 27,
+        supporters: 100,
+        image: "https://kettocdn.gumlet.io/media/campaign/212000/212655/image/wid1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=300&dpr=1.3",
+    },
+    {
+        id: 3,
+        title: "Fundraiser 3",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam",
+        amtraised: 10000,
+        noofdays: 27,
+        supporters: 100,
+        image: "https://kettocdn.gumlet.io/media/campaign/212000/212655/image/wid1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=300&dpr=1.3",
+    },
+    {
+        id: 4,
+        title: "Fundraiser 4",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam",
+        amtraised: 10000,
+        noofdays: 27,
+        supporters: 100,
+        image: "https://kettocdn.gumlet.io/media/campaign/212000/212655/image/wid1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=300&dpr=1.3",
+    },
+    {
+        id: 5,
+        title: "Fundraiser 5",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies aliquam",
+        amtraised: 10000,
+        noofdays: 27,
+        supporters: 100,
+        image: "https://kettocdn.gumlet.io/media/campaign/212000/212655/image/wid1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=300&dpr=1.3",
+    }
+]
