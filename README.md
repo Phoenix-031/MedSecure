@@ -2,6 +2,19 @@
 
 Welcome to the **Med Secure** project repository! This web application aims to streamline patient care and provide a secure platform for recording and accessing medical histories. It offers features such as user registration, medical history recording, appointment scheduling, data sharing, and more.
 
+
+# Attractive point of the application
+
+**Only the hospital owner can add the doctors
+**Doctor details and cheked befor addying the doctors to the system
+**Annoimity of patients 
+**The medical data remains anonymous
+**Medical data are stored on IPFS and are easiy transferrable
+**Once the treaatement is over the doctors no longet have the authority or have the details of the patient
+**If a person needs to see a new doctor he/she can send teh required medical docs throuhg ipfs
+**Even is the data leask since the wallets are anonymous no one knows who the medical record belongs to
+**Only the doctors who is monitoring /treating the patient has access to the medical history until the treatement continues.
+**Patients can only give review to the doctors who were responsible for their treatement and aso reviews can be handed over only after the treatement is over
 ## Features
 
 - **User Registration and Authentication**: Patients, healthcare providers, and administrators can create accounts and securely log in to access the website's features.
