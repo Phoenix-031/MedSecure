@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom';
 const { Search } = Input;
 function Navbar() {
   return (
-    <div className="grid grid-cols-[1fr_2.5fr_2fr_3fr] h-full items-center">
-      <div className="bg-red-400"></div>
+    <div className="grid grid-cols-[1.2fr_2.5fr_2fr_3fr] h-full items-center">
+      <h1 className="font-extrabold text-[1.725rem] text-center px-4">
+        Med <span className="text-blue-900">Secure</span>
+      </h1>
       <div className="h-full">
         <ul className="grid grid-cols-4 justify-items-center items-center h-full">
-          <Link className="text-xl font-bold" to={'/'}>
+          <Link className="text-xl font-bold" to={'/home'}>
             Home
           </Link>
           <Link className="text-xl font-bold" to={'/about'}>

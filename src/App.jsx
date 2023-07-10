@@ -4,12 +4,14 @@ import AboutScreen from './pages/about';
 import ContactScreen from './pages/contact';
 import ExploreScreen from './pages/explore';
 import HomeScreen from './pages/home';
+import LandingPage from './pages/landingPage';
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<NavigationLayout />}>
-          <Route index element={<HomeScreen />} />
+          <Route index element={<LandingPage />} />
+          <Route path="home" element={<HomeScreen />} />
           <Route path="about" element={<AboutScreen />} />
           <Route path="explore" element={<ExploreScreen />} />
           <Route path="contact" element={<ContactScreen />} />

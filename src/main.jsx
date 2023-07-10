@@ -5,6 +5,7 @@ import App from './App.jsx';
 import './index.css';
 
 import { BrowserRouter } from 'react-router-dom';
+import LandingPage from './pages/landingPage/index.jsx';
 
 // import { ThirdwebProvider } from "@thirdweb-dev/react";
 
