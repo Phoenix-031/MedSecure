@@ -24,7 +24,7 @@ const GetAllDoctors = () => {
     <div>
       {
         datafetched.isLoading ? <div>Loading...</div> : 
-        <div className="border-2 border-border-primary bg-bg-primary w-full h-[100vh] flex flex-wrap gap-1 py-3 items-start px-3 overflow-auto" >
+        <div className="border-2 border-border-primary bg-bg-primary w-full h-[100vh] flex flex-wrap gap-1 pt-20 py-3 items-start px-3 overflow-auto" >
           {
           datafetched.data.map((item, index) => {
             if(item.name !== ''){

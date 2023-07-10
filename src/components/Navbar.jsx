@@ -3,6 +3,8 @@ import React from 'react'
 import { useAccount, useConnect, useEnsName } from 'wagmi'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 
+import { useNavigate } from 'react-router-dom'
+
 
 import { NavLink } from 'react-router-dom'
 import useStore from '../store'
@@ -10,8 +12,11 @@ import useStore from '../store'
 
 const Navbar = () => {
 
-  const {walletaddress} = useStore((state) => ({
-    walletaddress:state.walletaddress
+  const navigate = useNavigate()
+
+  const {walletaddress, setWalletaddress} = useStore((state) => ({
+    walletaddress:state.walletaddress,
+    setWalletaddress: state.setWalletaddress
   }))
 
   const { address, isConnected } = useAccount()
@@ -20,7 +25,7 @@ const Navbar = () => {
     connector: new InjectedConnector(),
   })
  
-  if (isConnected) return <div>Connected to {ensName ?? address}</div>
+  // if (isConnected) return <div>Connected to {ensName ?? address}</div>
   
   return (
     <>
@@ -32,7 +37,14 @@ const Navbar = () => {
           >Connect Wallet</button> */}
 
           {
-            walletaddress !== '' ? '' : (<NavLink className='py-2 px-6 text-md text-white font-serif border-2 border-border-primary rounded-lg my-3 mr-8 hover:bg-bg-secondary' to='/login'>Login</NavLink>)
+            walletaddress !== '' ? (
+              <button className='py-2 px-6 text-md text-white font-serif border-2 border-border-primary rounded-lg my-3 mr-8 hover:bg-bg-secondary' onClick={() => {
+                navigate('/')
+                setWalletaddress('')
+              }}>Logout</button>
+            ) : (<button className='py-2 px-6 text-md text-white font-serif border-2 border-border-primary rounded-lg my-3 mr-8 hover:bg-bg-secondary' 
+            onClick={() => navigate('/login')}
+            >Login</button>)
           }
           {/* <button>Register</button> */}
         </div>
